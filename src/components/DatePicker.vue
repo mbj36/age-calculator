@@ -1,7 +1,7 @@
 <template>
   <v-container fluid grid-list-md>
     <v-layout align-center justify-space-around row>
-      <v-flex d-flex xs12 sm8 md8 mt-5>
+      <v-flex xs12 sm8 md8 mt-5>
         <v-menu ref="menu" :close-on-content-click="false" v-model="menu" :nudge-right="40" lazy transition="scale-transition" offset-y full-width min-width="290px">
           <v-text-field slot="activator" v-model="date" solo label="Date of Birth" prepend-icon="event" readonly></v-text-field>
           <v-date-picker ref="picker" v-model="date" :max="new Date().toISOString().substr(0, 10)" min="1950-01-01" @change="save"></v-date-picker>
