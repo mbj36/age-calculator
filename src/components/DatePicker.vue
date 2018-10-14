@@ -63,7 +63,7 @@
           1970 +
           ' Years, ' +
           diffDate.getMonth() +
-          ' Month, ' +
+          ' Months, ' +
           (diffDate.getDate() - 1) +
           ' Days ';
         this.weeksBetween = Math.round(
